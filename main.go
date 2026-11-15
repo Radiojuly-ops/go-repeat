@@ -15,6 +15,7 @@ func main() {
 	}
 
 	fmt.Println(text.ToUpperCase(content))
+	fmt.Println(text.ToLowerCase(content))
 	fmt.Println(content)
 	fmt.Println(text.CountWords(content))
 
