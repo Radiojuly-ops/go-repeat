@@ -18,8 +18,9 @@ func main() {
 	fmt.Println(text.ToLowerCase(content))
 	fmt.Println(content)
 	fmt.Println(text.CountWords(content))
+	fmt.Println(text.CapitalizeWords(content))
 
-	err = file.WriterFile("internal/testdata/output.txt", "Hello World")
+	err = file.WriterFile("internal/testdata/output.txt", text.CapitalizeWords(content))
 	if err != nil {
 		fmt.Println("Error", err)
 		return
