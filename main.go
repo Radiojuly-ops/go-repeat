@@ -19,6 +19,7 @@ func main() {
 	fmt.Println(content)
 	fmt.Println(text.CountWords(content))
 	fmt.Println(text.CapitalizeWords(content))
+	fmt.Println(text.ReverseWords(content))
 
 	err = file.WriterFile("internal/testdata/output.txt", text.CapitalizeWords(content))
 	if err != nil {
